@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    min-height: 700px;
+    background-image: url("/images/fon-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/*верхнее где кнопка и логотип*/
+.top-nav{
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    /*background: rgba(255, 0, 0, 0.24);*/
+}
+.top-nav img{
+    width: 100px;
+    height: auto;
+}
+
+/*верх контент где ремонт квартир*/
+.content-top-nav{
+    width: 80%;
+    /*background: rgba(0, 128, 0, 0.29);*/
+}
+.content-top-nav h2,p{
+    color: var(--color-lite-lite);
+}
+
+.content-top-nav p{
+    font-weight: 300;
+    margin: 20px 0 80px 0;
+}
+
+@media screen and (max-width: 1000px){
+    header{
+        min-height: 400px;
+    }
+    .content-top-nav, .top-nav{
+        width: 90%;
+    }
+    .top-nav img{
+        width: 80px;
+    }
+    .content-top-nav p{
+        margin: 10px 0 20px 0;
+    }
+}
+@media screen and (max-width: 1000px){
+    .top-nav img{
+        width: 50px;
+    }
+}

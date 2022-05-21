@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+
+:root{
+    --color-dark-dark: #535353;
+    --color-lite-lite: #FFF;
+}
+
+h2{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+a,p,button{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.p-big{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.standart-white-button{
+    padding: 15px 30px;
+    color: var(--color-lite-lite);
+    background: none;
+    border: 2px solid var(--color-lite-lite);
+    transition: .3s;
+}
+.standart-white-button:hover{
+    background: white;
+    color: var(--color-dark-dark);
+}
+
+@media screen and (max-width: 1000px){
+    h2{
+        font-size: 35px;
+    }
+    a,p,button{
+        font-size: 15px;
+    }
+    .p-big{
+        font-size: 20px;
+    }
+    .standart-white-button{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    h2{
+        font-size: 25px;
+    }
+    a,p,button{
+        font-size: 12px;
+    }
+    .p-big{
+        font-size: 15px;
+    }
+    .standart-white-button{
+        padding: 10px 20px;
+    }
+}

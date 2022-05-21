@@ -1,0 +1,37 @@
+.photo-main {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 70px 4px;
+    width: 100%;
+}
+.column-photo {
+    -ms-flex: 33.33%; /* IE10 */
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+
+.column-photo img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .column-photo.delete{
+        display: none;
+    }
+    .column-photo {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .column-photo {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}

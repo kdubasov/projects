@@ -1,0 +1,23 @@
+footer{
+    margin-top: 150px;
+    min-height: 200px;
+    background: #4B5BAC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer img{
+    width: 100px;
+    height: auto;
+}
+
+@media screen and (max-width: 500px){
+    footer{
+        min-height: 100px;
+    }
+    footer img{
+        width: 50px;
+        height: auto;
+    }
+}

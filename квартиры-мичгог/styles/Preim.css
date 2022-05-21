@@ -1,0 +1,51 @@
+.our-preimushestva-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.our-preimushestva-main{
+    width: 80%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.our-preimushestva-main h2{
+    width: 100%;
+    color: var(--color-dark-dark);
+    margin-bottom: 20px;
+}
+
+.our-preimushestva-main span{
+    display: flex;
+    align-items: center;
+    width: 48%;
+    margin: 1% 1% 0 0;
+    /*background: rgba(255, 0, 0, 0.35);*/
+}
+.our-preimushestva-main img{
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.our-preimushestva-main p{
+    color: var(--color-dark-dark);
+}
+
+@media screen and (max-width: 1000px){
+    .our-preimushestva-main{
+        width: 90%;
+        padding: 50px 0 20px 0;
+    }
+    .our-preimushestva-main img{
+        width: 50px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 500px){
+    .our-preimushestva-main span{
+        width: 98%;
+        margin: 3% 1% 0 0;
+    }
+}
