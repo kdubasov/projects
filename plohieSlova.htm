@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Words</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Удаляем плохие слова</h1>
+            <div id="out"></div>
+            <ul>
+                <li>блин</li>
+                <li>дурак</li>
+                <li>тупой</li>
+                <li>иди отсюда</li>
+                <li>пофиг</li>
+            </ul>
+            <p><textarea name="" id="" cols="30" rows="10"></textarea></p>
+            <p><button class="butmain">Send</button></p>
+        </div>
+    </div>
+    <script>
+
+        //https://www.youtube.com/watch?v=u8aVdY0Fl7s&t=295s
+
+        let abuse = ['блин','дурак','тупой','иди отсюда','пофиг',]
+
+        document.querySelector('.butmain').onclick = () =>{
+            let text = document.querySelector('textarea').value;
+            //console.log(text) //при нажатии на кнопку выводит то что написано внутри текстэриа
+            for(let i = 0; i<abuse.length; i++){
+                while(text.indexOf(abuse[i]) != -1){
+                    text = text.replace(abuse[i],star(abuse[i].length))//replace - заменяет abuse[i] на *
+                }
+            }
+            document.querySelector('#out').innerHTML += '<div class="comment">'+text+'</div>';
+        }
+
+        function star(n){//подсчитываем звездочки
+            let out='';
+            for(let i = 0; i<n; i++){
+                out+='*'
+            }
+            return out;
+        }
+    </script>
+</body>
+</html>
