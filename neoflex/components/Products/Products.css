@@ -1,0 +1,71 @@
+.catalog-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.flex-catalog-main{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*background: rgba(255, 0, 0, 0.37);*/
+}
+.flex-catalog-main p{
+    width: 100%;
+    margin-left: 7%;
+    color: #838383;
+    font-size: 20px;
+    font-weight: 600;
+}
+.flex-catalog-main .card{
+    width: 28%;
+    max-width: 400px;
+    margin: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+
+.card .card-img-top{
+    height: 250px;
+    width: auto;
+    /*background: rgba(255, 0, 0, 0.42);*/
+    margin: 30px auto 30px auto;
+}
+.list-group{
+    margin:10px 0 10px 0;
+    border: none !important;
+}
+.list-group-item{
+    /*background: rgba(0, 128, 0, 0.47);*/
+    display: flex;
+    justify-content: space-between;
+    border: 0;
+}
+.list-group-item:last-child{
+    border-radius: 0 0 30px 30px;
+}
+
+
+.list-group-item span{
+    font-weight: 600;
+}
+.list-group-item .span-price-tov{
+    color: #FFA542;
+}
+.list-group-item span b{
+    color: #FFA542;
+    margin-right: 3px;
+}
+.list-group-item span button{
+    background: none;
+    border:none;
+    font-weight: 600;
+    transition: .3s;
+    font-size: 17px;
+}
+.list-group-item span button:hover{
+    opacity: .7;
+}
